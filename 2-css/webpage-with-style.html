@@ -5,19 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webpage with style</title>
   <style type="text/css">
-    p {
-      color:black;
-      font-size: 100%;
+    .blue {
+      color: blue;
     }
-    h1 {
-      color:purple;
+    .large {
+      font-size: 120%;
+    }
+    .first-section {
+      background:rgb(213, 64, 243);
+      width: 30%;
+      float: right;
+    }
+    .second-section {
+      background: yellow;
+      width: 30%;
+      float: left;
+    }
+    .clear-float {
+      clear: both;
     }
   </style>
 </head>
 <body>
-  <h1>新プロダクトのご紹介</h1>
-  <p>今回は、新しくリリースするプロダクトの紹介をします。</p>
+  <div class="first-section">
+    <h1>新プロダクトのご紹介</h1>
+    <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
+  </div>
 
-  <p>バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+  <div class="second-section">
+    <p class="large">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
+    <p>このVRゴーグルは従来品よりも解像度が高くなっています。</p>
+  </div>
+  <div class="clear-float"></div>
+  <p>Therd paragrph</p>
 </body>
 </html>
