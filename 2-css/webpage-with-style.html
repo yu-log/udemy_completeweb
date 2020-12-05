@@ -1,48 +1,31 @@
 <!DOCTYPE html>
-test
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Webpage with style</title>
   <style type="text/css">
-    .blue {
-      color: blue;
+    #square-red{
+      background: red;
     }
-    .large {
-      font-size: 120%;
+    #square-blue{
+      background: blue;
+      border: 1px black solid;
     }
-    .first-section {
-      background:lightgreen;
-      width: 30%;
-      position: relative;
-      left: 0px;
-      top: 100px;
+    #square-green{
+      background: green;
     }
-    .second-section {
-      background: yellow;
-      width: 30%;
-      position: relative;
-    }
-    .clear-float {
-      clear: both;
+    .square{
+      width: 100px;
+      height: 100px;
+      margin: left;
+      float: left;
     }
   </style>
 </head>
 <body>
-
-  <div class="first-section">
-    <h1>新プロダクトのご紹介</h1>
-    <p class="blue">今回は、新しくリリースするプロダクトの紹介をします。</p>
-  </div>
-
-  <div class="second-section">
-    <p class="large">バーチャルリアリティが体験できるVRゴーグルを発売します。</p>
-    <p>このVRゴーグルは従来品よりも解像度が高くなっています。</p>
-  </div>
-
-  <div class="clear-float"></div>
-
-  <p>Therd paragrph</p>
+  <div id="square-red" class="square"></div>
+  <div id="square-blue" class="square"></div>
+  <div id="square-green" class="square"></div>
 </body>
 </html>
