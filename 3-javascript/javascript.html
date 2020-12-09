@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpage with style</title>
     <style type="text/css">
+      .circle{
+        width:200px;
+        height:200px;
+        border-radius:50%;}
+      #akamaru{
+        background:red;
+      }
+      #aomaru{
+        background:blue;
+      }
+      #kimaru{
+        background:yellow;
+      }
     </style>
   </head>
   <body>
-    <p id="text">Hello World!</p>
-    <button id="myButton" >Change Text</button>
-    <script type="text/javascript" >
-      document.getElementById("myButton").onclick = function(){
-        // alert("ボタンがクリックされました")
-        document.getElementById("text").innerHTML = "クリックしましたね"
-      }
-    </script>
-    <p id="secondParagraph">JavaScriptは、
-    </p>
-    <button id="secondButton">追記する</button>
-    <script type="text/javascript">
-      document.getElementById("secondButton").onclick = function(){
-       /* document.getElementById("secondParagraph").innerHTML = 
-          document.getElementById("secondParagraph").innerHTML + "ブラウザでもサーバサイドでも動作するプログラミング言語です";
-          */
-          document.getElementById("secondParagraph").innerHTML += "ブラウザでもサーバサイドでも動作するプログラミング言語です";
 
+    <div id="akamaru" class="circle"></div>
+
+    <div id="aomaru" class="circle"></div>
+
+    <div id="kimaru" class="circle"></div>
+    
+    <script type="text/javascript">
+      document.getElementById("akamaru").onclick = function(){
+        document.getElementById("akamaru").style.display = "none";
       }
-    </script>
+      document.getElementById("aomaru").onclick = function(){
+        document.getElementById("aomaru").style.display = "none";
+      }
+      document.getElementById("kimaru").onclick = function(){
+        document.getElementById("kimaru").style.display = "none";
+      }
+    </script> 
   </body>
 </html>
