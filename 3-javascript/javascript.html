@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with style</title>
+    <style type="text/css">
+      .circle{
+        width:200px;
+        height:200px;
+        border-radius:50%;}
+      #akamaru{
+        background:red;
+      }
+      #aomaru{
+        background:blue;
+      }
+      #kimaru{
+        background:orange;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="akamaru" class="circle"></div>
+
+    <div id="aomaru" class="circle"></div>
+
+    <div id="kimaru" class="circle"></div>
+    
+    <script type="text/javascript">
+      document.getElementById("akamaru").onclick = function(){
+        document.getElementById("akamaru").style.display = "none";
+      }
+      document.getElementById("aomaru").onclick = function(){
+        document.getElementById("aomaru").style.display = "none";
+      }
+      document.getElementById("kimaru").onclick = function(){
+        document.getElementById("kimaru").style.display = "none";
+      }
+    </script> 
+  </body>
+</html>
